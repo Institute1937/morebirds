@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bird.name %>
+</p>
+
+<p>
+  <strong>Variant:</strong>
+  <%= @bird.variant %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @bird.weight %>
+</p>
+
+<p>
+  <strong>Mugshot:</strong>
+  <%= image_tag(@bird.mugshot) %>
+</p>
+
+<%= link_to 'Edit', edit_bird_path(@bird) %> |
+<%= link_to 'Back', birds_path %>
